@@ -34,11 +34,10 @@ struct AtrisenseRecord {
 ## Coordinate Conversion
 
 Each record is converted from spherical to Cartesian coordinates using the conversion formula:  
-	`
-	x = d · cos(y) · cos(x)  
-	y = d · cos(y) · sin(x)    
-	z = d · sin(y)    
-	`
+	x = d · cos(y) · cos(x)    
+	y = d · cos(y) · sin(x)      
+	z = d · sin(y)      
+	
 Angles are converted from degrees to radians before conversion.
 
 ---
@@ -110,6 +109,7 @@ Software Developer
 mert.tas@gmail.com  
 
 ---
+
 
 
 
