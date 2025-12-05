@@ -105,8 +105,9 @@ against the original sensor distances.
 
 ## Author
 
-Mert Taş
-Software Developer
-mert.tas@gmail.com
+- Mert Taş
+- Software Developer
+- mert.tas@gmail.com
 
 ---
+
