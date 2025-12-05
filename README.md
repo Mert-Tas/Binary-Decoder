@@ -83,13 +83,13 @@ Below is a preview of the decoded Atrisense 360 LiDAR point cloud rendered using
 
 ---
 
-# Notes
+## Notes
 
 - Basic input validation is applied (invalid distances are skipped)
 - The solution is structured for readability and testability
 
 
-## Validation
+### Validation
 
 The correctness of the coordinate conversion was verified by
 
@@ -110,5 +110,6 @@ Software Developer
 mert.tas@gmail.com  
 
 ---
+
 
 
