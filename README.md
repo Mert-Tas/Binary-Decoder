@@ -34,19 +34,18 @@ struct AtrisenseRecord {
 ## Coordinate Conversion
 
 Each record is converted from spherical to Cartesian coordinates using the conversion formula:  
-	```
+	`
 	x = d · cos(y) · cos(x)  
-	y = d · cos(y) · sin(x)  
-	z = d · sin(y)  
-	```
+	y = d · cos(y) · sin(x)    
+	z = d · sin(y)    
+	`
 Angles are converted from degrees to radians before conversion.
 
 ---
 
 ## Requirements
-```
-pip install -r requirements.txt
-```
+`pip install -r requirements.txt`
+
 Required libraries:
 - Python 3.9+
 - numpy
@@ -58,9 +57,8 @@ Required libraries:
 
 1. Place the binary file "atrisense.bin" next to the script.
 2. Run the decoder
-	```
-	python BinaryDecoder.py
-	```
+	`python BinaryDecoder.py`
+   
 This will:
 - Decode all records
 - Convert them to Cartesian coordinates
@@ -112,6 +110,7 @@ Software Developer
 mert.tas@gmail.com  
 
 ---
+
 
 
 
