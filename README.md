@@ -23,6 +23,7 @@ struct AtrisenseRecord {
     float    distance_m;
     uint16_t intensity;
 };
+```
 
 - Binary encoding: little-endian
 - Record size: 18 bytes
@@ -107,4 +108,5 @@ against the original sensor distances.
 Mert Taş
 Software Developer
 mert.tas@gmail.com
+
 ---
