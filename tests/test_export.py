@@ -1,8 +1,9 @@
 import os
+# binary_decoder is the package name 
 from binary_decoder import BinaryDecoder
 
 def test_export(temp_path):
-    decoder = BinaryDecoder("atrisense.bin")
+    decoder = BinaryDecoder("./atrisense.bin")
     decoder.decode_records()
     decoder.convert_angles()
 
