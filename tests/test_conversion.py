@@ -4,6 +4,7 @@ from binary_decoder import BinaryDecoder
 # Mathematical correctness test
 def test_cartesian_conversion():
     decoder = BinaryDecoder("atrisense.bin")
+    decoder.read_binary()
     decoder.decode_records()
     decoder.convert_angles()
 
