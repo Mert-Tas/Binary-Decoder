@@ -1,7 +1,7 @@
 from binary_decoder import BinaryDecoder
 
 def test_decode_binary():
-    decoder = BinaryDecoder("./atrisense.bin")
+    decoder = BinaryDecoder("atrisense.bin")
     records = decoder.decode_records()
 
     assert len(records) > 0
