@@ -1,5 +1,5 @@
 import numpy as np
-from BinaryDecoder import BinaryDecoder
+from binary_decoder import BinaryDecoder
 
 # Mathematical correctness test
 def test_cartesian_conversion():

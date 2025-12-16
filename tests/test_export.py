@@ -1,5 +1,5 @@
 import os
-from BinaryDecoder import BinaryDecoder
+from binary_decoder import BinaryDecoder
 
 def test_export(temp_path):
     decoder = BinaryDecoder("atrisense.bin")

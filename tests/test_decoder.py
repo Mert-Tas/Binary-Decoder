@@ -1,4 +1,4 @@
-from BinaryDecoder import BinaryDecoder
+from binary_decoder import BinaryDecoder
 
 def test_decode_binary():
     decoder = BinaryDecoder("atrisense.bin")
