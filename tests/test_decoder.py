@@ -1,7 +1,7 @@
 from binary_decoder import BinaryDecoder
 
 def test_decode_binary():
-    decoder = BinaryDecoder("atrisense.bin")
+    decoder = BinaryDecoder("../binary_decoder/atrisense.bin")
     decoder.read_binary()
     records = decoder.decode_records()
 

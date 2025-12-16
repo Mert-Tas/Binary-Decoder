@@ -4,7 +4,8 @@ from binary_decoder import BinaryDecoder
 
 def test_export(tmp_path):
     # NOTE: tmp_path is a fşxture name !
-    decoder = BinaryDecoder("atrisense.bin")
+    decoder = BinaryDecoder("../binary_decoder/atrisense.bin")
+    decoder.read_binary()
     decoder.decode_records()
     decoder.convert_angles()
 
