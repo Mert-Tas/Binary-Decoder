@@ -37,6 +37,7 @@ BinaryDecoder/
 ---
 
 🚀 Getting Started
+
 1️⃣ Clone the repository
 ```
 git clone <repository-url>
@@ -74,7 +75,7 @@ This project uses GitHub Actions to automatically run unit tests on:
 - Every pull request
 
 The workflow is defined in:
-`.github/workflows/python-ci.yml`
+`.github/workflows/python-ci.yml`  
 This ensures regressions are caught early and the codebase remains stable.
 
 ## Data Format
@@ -148,10 +149,21 @@ Below is a preview of the decoded Atrisense 360 LiDAR point cloud rendered using
 
 ---
 
-## Notes
+🧠 Design Notes
+
+- The decoder is implemented as a proper Python package
+- Imports are explicit and environment-independent
+- Test data paths are resolved using pathlib
+- Validation logic can be enabled without breaking the main pipeline
+
+These choices reflect production-oriented engineering practices.
+
+📌 Notes
 
 - Basic input validation is applied (invalid distances are skipped)
 - The solution is structured for readability and testability
+- Unit tests are primarily for validation and CI, not visualization
+- The project can be easily extended with performance or fuzz tests
 
 
 ### Validation
@@ -175,6 +187,7 @@ Software Developer
 mert.tas@gmail.com  
 
 ---
+
 
 
 
