@@ -16,16 +16,24 @@ The solution:
 ✨ Features
 
 - Binary file decoding into structured records
-
 - Conversion from polar/spherical data to Cartesian coordinates
-
 - Robust unit test coverage using pytest
-
 - GitHub Actions CI pipeline (runs tests on every push & PR)
-
 - CI-safe file handling and package structure
 
----
+📁 Project Structure
+
+BinaryDecoder/
+├── binary_decoder/
+│ ├── __init__.py
+│ └── BinaryDecoder.py
+├── tests/
+│ └── test_decoder.py
+├── .github/workflows/
+│ └── python-ci.yml
+├── pytest.ini
+├── requirements.txt
+└── README.md
 
 ## Data Format
 
@@ -125,6 +133,7 @@ Software Developer
 mert.tas@gmail.com  
 
 ---
+
 
 
 
