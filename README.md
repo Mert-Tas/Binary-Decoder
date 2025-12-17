@@ -65,6 +65,28 @@ venv\\Scripts\\activate     # Windows
 ```bash
 pip install -r requirements.txt
 ```
+
+Required libraries:
+* Python 3.9+
+* numpy
+* matplotlib
+* pytest
+
+---
+
+## How to run
+
+1. Place the binary file "atrisense.bin" next to the script.
+2. Run the decoder
+	`python BinaryDecoder.py`
+   
+This will:
+- Decode all records
+- Convert them to Cartesian coordinates
+- Export a PLY file:
+	atrisense_pointcloud.ply
+- Display a 3D visualization using matplotlib
+
 ---
 
 ## 🧪 Running Tests
@@ -132,32 +154,6 @@ Angles are converted from degrees to radians before conversion.
 
 ---
 
-## Requirements
-`pip install -r requirements.txt`
-
-Required libraries:
-- Python 3.9+
-- numpy
-- matplotlib
-- pytest
-
----
-
-## How to run
-
-1. Place the binary file "atrisense.bin" next to the script.
-2. Run the decoder
-	`python BinaryDecoder.py`
-   
-This will:
-- Decode all records
-- Convert them to Cartesian coordinates
-- Export a PLY file:
-	atrisense_pointcloud.ply
-- Display a 3D visualization using matplotlib
-
----
-
 ## Visualization Preview
 
 Below is a preview of the decoded Atrisense 360 LiDAR point cloud rendered using matplotlib:
@@ -208,12 +204,14 @@ against the original sensor distances.
 
 ## 👤 Author
 
+Developed as part of a technical assignment and learning exercise, with an emphasis on clean architecture, testability, and CI integration.
+
 Mert Taş  
 Software Developer  
 mert.tas@gmail.com  
 
-Developed as part of a technical assignment and learning exercise, with an emphasis on clean architecture, testability, and CI integration.
 ---
+
 
 
 
