@@ -94,7 +94,7 @@ This project uses **GitHub Actions** to automatically run unit tests on:
 The workflow is defined in:
 
 ```
-.github/workflows/python-ci.yml`
+.github/workflows/python-ci.yml
 ```
 
 This ensures regressions are caught early and the codebase remains stable.
@@ -139,6 +139,7 @@ Required libraries:
 - Python 3.9+
 - numpy
 - matplotlib
+- pytest
 
 ---
 
@@ -213,6 +214,7 @@ mert.tas@gmail.com
 
 Developed as part of a technical assignment and learning exercise, with an emphasis on clean architecture, testability, and CI integration.
 ---
+
 
 
 
