@@ -1,10 +1,13 @@
 import os
+from pathlib import Path
 # binary_decoder is the package name 
 from binary_decoder import BinaryDecoder
 
+DATA_FILE = Path(__file__).resolve().parents[1] / "binary_decoder" / "atrisense.bin"
+
 def test_export(tmp_path):
-    # NOTE: tmp_path is a fşxture name !
-    decoder = BinaryDecoder("../binary_decoder/atrisense.bin")
+    # NOTE: tmp_path is a fixture name !
+    decoder = BinaryDecoder(str(DATA_FILE))
     decoder.read_binary()
     decoder.decode_records()
     decoder.convert_angles()

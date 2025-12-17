@@ -1,7 +1,11 @@
+from pathlib import Path
 from binary_decoder import BinaryDecoder
 
+# __file__ is actual location of the test file, parents[1] is repo root
+DATA_FILE = Path(__file__).resolve().parents[1] / "binary_decoder" / "atrisense.bin"
+
 def test_decode_binary():
-    decoder = BinaryDecoder("../binary_decoder/atrisense.bin")
+    decoder = BinaryDecoder(str(DATA_FILE))
     decoder.read_binary()
     records = decoder.decode_records()
 

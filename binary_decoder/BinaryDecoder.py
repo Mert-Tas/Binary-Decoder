@@ -8,7 +8,7 @@ import numpy as np
 
 class BinaryDecoder:
 
-    def __init__(self, binFile):
+    def __init__(self, binFile : str):
         self.binFile = binFile
         self.fileLen = 0
         self.rawData = b""

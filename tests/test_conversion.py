@@ -1,9 +1,12 @@
 import numpy as np
+from pathlib import Path 
 from binary_decoder import BinaryDecoder
+
+DATA_FILE = Path(__file__).resolve().parents[1] / "binary_decoder" / "atrisense.bin"
 
 # Mathematical correctness test
 def test_cartesian_conversion():
-    decoder = BinaryDecoder("../binary_decoder/atrisense.bin")
+    decoder = BinaryDecoder(str(DATA_FILE))
     decoder.read_binary()
     decoder.decode_records()
     decoder.convert_angles()
