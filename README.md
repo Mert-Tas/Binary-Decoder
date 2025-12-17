@@ -34,6 +34,48 @@ BinaryDecoder/
 ├── pytest.ini
 ├── requirements.txt
 └── README.md
+---
+
+🚀 Getting Started
+1️⃣ Clone the repository
+```
+git clone <repository-url>
+cd BinaryDecoder
+```
+2️⃣ Create and activate a virtual environment
+```
+python -m venv venv
+source venv/bin/activate  # Linux / macOS
+venv\\Scripts\\activate     # Windows
+```
+3️⃣ Install dependencies
+`pip install -r requirements.txt`
+
+---
+
+🧪 Running Tests
+
+Unit tests are written using pytest and can be run locally or via CI.
+
+`pytest`
+
+Tests:
+
+- Validate binary decoding
+- Verify Cartesian conversion correctness
+- Handle edge cases (file paths, data consistency)
+- All tests are CI-safe and independent of the working directory.
+---
+
+🔄 Continuous Integration
+
+This project uses GitHub Actions to automatically run unit tests on:
+- Every push
+- Every pull request
+
+The workflow is defined in:
+`.github/workflows/python-ci.yml`
+This ensures regressions are caught early and the codebase remains stable.
 
 ## Data Format
 
@@ -133,6 +175,7 @@ Software Developer
 mert.tas@gmail.com  
 
 ---
+
 
 
 
