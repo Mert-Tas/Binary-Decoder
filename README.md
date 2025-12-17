@@ -1,5 +1,7 @@
 
-# Atrisense 360 Lidar Binary Decoder
+# Binary Decoder for Atrisense 360 Lidar 
+
+![CI](https://github.com/Mert-Tas/Binary-Decoder/actions/workflows/python-ci.yml/badge.svg)
 
 Binary-Decoder is a lightweight Python tool for decoding binary sensor data and converting it into Cartesian coordinates. The project is designed with testability, CI support, and production readiness in mind.
 
@@ -13,16 +15,19 @@ The solution:
 
 ---
 
-✨ Features
+## ✨ Features
 
-- Binary file decoding into structured records
-- Conversion from polar/spherical data to Cartesian coordinates
-- Robust unit test coverage using pytest
-- GitHub Actions CI pipeline (runs tests on every push & PR)
-- CI-safe file handling and package structure
+* Binary file decoding into structured records
+* Conversion from polar/spherical data to Cartesian coordinates
+* Robust unit test coverage using `pytest`
+* GitHub Actions CI pipeline (runs tests on every push & PR)
+* CI-safe file handling and package structure
 
-📁 Project Structure
+---
 
+## 📁 Project Structure
+
+```
 BinaryDecoder/
 ├── binary_decoder/
 │ ├── __init__.py
@@ -34,49 +39,67 @@ BinaryDecoder/
 ├── pytest.ini
 ├── requirements.txt
 └── README.md
+```
+
 ---
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-1️⃣ Clone the repository
-```
+### 1️⃣ Clone the repository
+
+```bash
 git clone <repository-url>
 cd BinaryDecoder
 ```
-2️⃣ Create and activate a virtual environment
-```
+
+### 2️⃣ Create and activate a virtual environment
+
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux / macOS
 venv\\Scripts\\activate     # Windows
 ```
-3️⃣ Install dependencies
-`pip install -r requirements.txt`
 
+### 3️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
 ---
 
-🧪 Running Tests
+## 🧪 Running Tests
 
-Unit tests are written using pytest and can be run locally or via CI.
+Unit tests are written using **pytest** and can be run locally or via CI.
 
-`pytest`
+```bash
+pytest
+```
 
 Tests:
 
-- Validate binary decoding
-- Verify Cartesian conversion correctness
-- Handle edge cases (file paths, data consistency)
-- All tests are CI-safe and independent of the working directory.
+* Validate binary decoding
+* Verify Cartesian conversion correctness
+* Handle edge cases (file paths, data consistency)
+
+All tests are **CI-safe** and independent of the working directory.
+
 ---
 
-🔄 Continuous Integration
+## 🔄 Continuous Integration
 
-This project uses GitHub Actions to automatically run unit tests on:
-- Every push
-- Every pull request
+This project uses **GitHub Actions** to automatically run unit tests on:
+* Every push
+* Every pull request
 
 The workflow is defined in:
-`.github/workflows/python-ci.yml`  
+
+```
+.github/workflows/python-ci.yml`
+```
+
 This ensures regressions are caught early and the codebase remains stable.
+
+---
 
 ## Data Format
 
@@ -149,22 +172,23 @@ Below is a preview of the decoded Atrisense 360 LiDAR point cloud rendered using
 
 ---
 
-🧠 Design Notes
+## 🧠 Design Notes
 
-- The decoder is implemented as a proper Python package
-- Imports are explicit and environment-independent
-- Test data paths are resolved using pathlib
-- Validation logic can be enabled without breaking the main pipeline
+* The decoder is implemented as a proper Python package
+* Imports are explicit and environment-independent
+* Test data paths are resolved using `pathlib`
+* Validation logic can be enabled without breaking the main pipeline
 
-These choices reflect production-oriented engineering practices.
+These choices reflect **production-oriented engineering practices**.
 
-📌 Notes
+---
 
-- Basic input validation is applied (invalid distances are skipped)
-- The solution is structured for readability and testability
-- Unit tests are primarily for validation and CI, not visualization
-- The project can be easily extended with performance or fuzz tests
+## 📌 Notes
 
+* Basic input validation is applied (invalid distances are skipped)
+* The solution is structured for readability and testability
+* Unit tests are primarily for validation and CI, not visualization
+* The project can be easily extended with performance or fuzz tests
 
 ### Validation
 
@@ -179,14 +203,17 @@ account for floating-point precision.
 - A tolerance-based numerical validation step is included to verify the Cartesian conversion 
 against the original sensor distances.
 
+---
 
-## Author
+## 👤 Author
 
 Mert Taş  
 Software Developer  
 mert.tas@gmail.com  
 
+Developed as part of a technical assignment and learning exercise, with an emphasis on clean architecture, testability, and CI integration.
 ---
+
 
 
 
